@@ -173,9 +173,9 @@ int iterate_table(hash_table *hashtable) {
     while(list != NULL) {
       temp = list;
       list = list->next;
-      int hash;
-      hash = hash(TABLE_SIZE, temp->string);
-      printf("|%s\t\t|%s\t\t|%d\n", temp->string, temp->val, hash);
+      int hashval;
+      hashval = hash(TABLE_SIZE, temp->string);
+      printf("|%s\t\t|%s\t\t|%d\n", temp->string, temp->val, hashval);
     }
   }
   
